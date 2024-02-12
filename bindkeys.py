@@ -1,11 +1,12 @@
-from pynput import keyboard
-import time
+#from pynput import keyboard
+#import time
 # Create a keyboard controller
-keyboard_controller = keyboard.Controller()
-# Variable to track whether the program should exit
-should_exit = False
-
+#keyboard_controller = keyboard.Controller()
+## Variable to track whether the program should exit
+#should_exit = False
+print("testing the build")
 # Define a function to be called when a key is pressed
+'''
 def on_key_press(key):
     global should_exit
 
@@ -36,3 +37,4 @@ with keyboard.Listener(on_press=on_key_press) as listener:
     listener.join()
 
 
+'''
