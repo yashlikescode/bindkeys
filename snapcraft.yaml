@@ -19,7 +19,7 @@ parts:
 
 apps:
   bindkeys:
-    command: python3 bindkeys.py
+    command: python bindkeys.py
     plugs:
       - hardware-observe
       - raw-usb
