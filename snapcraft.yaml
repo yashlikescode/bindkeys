@@ -1,0 +1,25 @@
+name: bindkeys
+version: 1.0
+summary: A Python package for listening to keyboard events and performing actions based on key presses
+description: |
+  This package uses the pynput library to listen for specific key presses and performs corresponding actions.
+
+grade: stable
+confinement: strict
+
+base: core18
+
+parts:
+  bindkeys:
+    plugin: python
+    source: .
+    source-type: local
+    python-packages:
+      - pynput
+
+apps:
+  bindkeys:
+    command: python3 bindkeys.py
+    plugs:
+      - hardware-observe
+      - raw-usb
