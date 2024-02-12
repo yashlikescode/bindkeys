@@ -16,7 +16,11 @@ parts:
     source-type: local
     python-packages:
       - pynput
-
+    build-packages:
+      - build-essential
+      - python
+      - pynput
+      
 apps:
   bindkeys:
     command: python bindkeys.py
